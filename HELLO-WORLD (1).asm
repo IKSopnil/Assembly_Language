@@ -1,0 +1,15 @@
+org 100h
+
+.CODE
+MAIN PROC
+    MOV AH, 09H
+    MOV DX, OFFSET MESSAGE
+    INT 21H
+    MOV AH, 4CH
+    MESSAGE DB "HELLO WORLD$"
+
+ret
+
+
+
+
